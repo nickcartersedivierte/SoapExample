@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number Conversion</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+    
+    <div class = "title">   
+    <h1>Number Converter Web</h1>
+    </div>
+        
+    <div class="mx-auto">
+    <div class="card mb-3 mx-auto bg-light text-dark border border-success" style="width: 20rem;">
+         <form name="Test" method="post" action="NumberToWordsServlet">
+        <div class="card-body">
+        <div class="form-group">
+        <p class="card-title">Enter the number you want to convert to words:</p>
+        <p>
+        <p><input type ="text" class="col-sm-6 col-form-label" name="n1" ID="Textarea1"></p>
+        <p>
+        <button type="submit" class="btn btn-success" value="Number to word" name="numbertowordbutton">Number to word</button>
+         </div> 
+         </form>
+    </div>   
+    </div>
+    
+    <div class="card my-3 mx-auto bg-light text-dark border border-info" style="width: 20rem;">
+        <form name="Test" action="NumberToDollarsServlet">
+         <div class="card-body">
+         <div class="form-group">
+        <p class="card-title">Enter the number you want to convert to dollars:</p>
+        <p>
+        <p><input type ="text" class="col-sm-6 col-form-label" name="n2" ID="Textarea2"></p>
+        <p>
+            <button type="submit" class="btn btn-info" value="Number to dollars" name="numbertodollarsbutton">Number to dollars</button>
+         </div> 
+         </div>
+        </form>
+    </div>  
+    </div> 
+  
+    </body>
+
+    
+</html>
